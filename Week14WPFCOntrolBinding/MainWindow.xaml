@@ -9,7 +9,7 @@
     <Border Padding="10">
         <StackPanel>
             <TextBox x:Name="InputBox" />
-            <TextBlock Text="테스트입니다." />
+            <TextBlock Text="{Binding ElementName=InputBox, Path=Text}" />
         </StackPanel>
     </Border>
 </Window>
