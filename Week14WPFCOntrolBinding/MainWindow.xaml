@@ -13,6 +13,7 @@
             <Slider x:Name="Slider" Minimum="1" Maximum="255" IsSnapToTickEnabled="True" />
             <TextBlock Text="{Binding ElementName=Slider, Path=Value}" />
             <TextBox Text="{Binding ElementName=Slider, Path=Value}" />
+            <ProgressBar Minimum="1" Maximum="255" BorderThickness="10" Value="{Binding ElementName=Slider, Path=Value}"/>
         </StackPanel>
     </Border>
 </Window>
