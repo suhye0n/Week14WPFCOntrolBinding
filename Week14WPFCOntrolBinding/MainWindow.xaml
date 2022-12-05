@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="ControlBinding" Height="450" Width="800">
     <Border Padding="10">
-
+        <StackPanel>
+            <TextBox x:Name="InputBox" />
+            <TextBlock Text="테스트입니다." />
+        </StackPanel>
     </Border>
 </Window>
