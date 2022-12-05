@@ -8,8 +8,11 @@
         Title="ControlBinding" Height="450" Width="800">
     <Border Padding="10">
         <StackPanel>
-            <TextBox x:Name="InputBox" />
-            <TextBlock Text="{Binding ElementName=InputBox, Path=Text}" />
+            <!--<TextBox x:Name="InputBox" />
+            <TextBlock Text="{Binding ElementName=InputBox, Path=Text}" />-->
+            <Slider x:Name="Slider" Minimum="1" Maximum="255" IsSnapToTickEnabled="True" />
+            <TextBlock Text="{Binding ElementName=Slider, Path=Value}" />
+            <TextBox Text="{Binding ElementName=Slider, Path=Value}" />
         </StackPanel>
     </Border>
 </Window>
